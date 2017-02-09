@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_all_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="1dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Galaxy C7 Pro"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:textColor="@android:color/background_dark"
+                    android:fontFamily="monospace"
+                    android:textStyle="normal|bold" />
+
+                <ImageView
+                    android:id="@+id/idImageProduct"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ss"
+                    android:paddingBottom="8dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:id="@+id/slugProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:visibility="gone"
+                    android:textSize="18sp"
+                    android:text="samsung_galaxy_c7_pro-8435"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
